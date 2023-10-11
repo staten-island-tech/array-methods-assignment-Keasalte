@@ -1,12 +1,3 @@
-
-/*  const array1 = ['1', '2', '3', '4', '5', ];
- array1.forEach((element) => console.log(element));
-  */
-
- /* const ages = [32, 33, 16, 40];
-
- const adult = ages.filter(value => value >= 18); */
-
  const serv = [
     {
         name: "Artoria",
@@ -35,4 +26,7 @@
 ]
 
 serv.forEach((names) => console.log(names.name));
-serv.forEach((move) => move.forEach(special) => console.log(special));
+serv.forEach((move) => {console.log(move.name); move.moves.forEach((special) => console.log(special))});
+
+const title = serv.filter((score) => score.rating === "B" );
+console.log(title);
